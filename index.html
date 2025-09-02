@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PAD GARAGE · Menú de Detallado</title>
+<style>
+:root{--bg:#0b0b0b;--card:#121212;--muted:#d1d5db;--primary:#ef4444;--accent:#9ca3af;--text:#f5f5f5}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.45}
+.wrapper{max-width:1000px;margin:0 auto;padding:24px}
+.header{display:flex;align-items:center;gap:18px;margin-bottom:18px}
+.brand{display:flex;flex-direction:column}
+.brand h1{margin:0;font-size:34px;letter-spacing:1px}
+.brand small{color:var(--accent);letter-spacing:2px}
+.hero{background:#111;border:1px solid #1f2937;border-radius:20px;padding:22px;margin:18px 0;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.hero .left{max-width:70%}
+.hero h2{margin:0 0 6px 0;font-size:24px}
+.hero p{margin:0;color:var(--muted)}
+.qr{background:white;padding:8px;border-radius:12px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:16px}
+.card{background:var(--card);border:1px solid #1f2937;border-radius:18px;padding:18px;display:flex;flex-direction:column;gap:10px}
+.card h3{margin:0;font-size:22px}
+.badge{display:inline-block;background:var(--primary);color:white;padding:6px 10px;border-radius:999px;font-weight:600;font-size:13px}
+.features{margin:0;padding-left:18px;color:var(--muted)}
+.price-table{width:100%;border-collapse:collapse;margin-top:10px}
+.price-table th,.price-table td{border:1px solid #374151;padding:10px;text-align:center}
+.footer{margin:24px 0;color:var(--accent);font-size:14px}
+.cta{margin-top:12px;display:flex;gap:10px;flex-wrap:wrap}
+.cta a,.cta button{background:#1f2937;border:1px solid #374151;color:#f9fafb;padding:10px 14px;border-radius:12px;text-decoration:none;cursor:pointer}
+.cta a:hover,.cta button:hover{transform:translateY(-1px)}
+@media print{@page{size:Letter;margin:0.5in}.cta{display:none}.wrapper{padding:0}.grid{gap:12px}.hero{padding:16px}}
+</style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <div class="brand">
+        <h1>PAD GARAGE</h1>
+        <small>PROFESIONAL AUTO DETAILING</small>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="left">
+        <h2>Paquetes de Detallado</h2>
+        <p>Escoge el paquete ideal para tu vehículo. Precios en MXN. Ubicación: Matehuala, SLP.</p>
+        <div class="cta">
+          <a href="https://cogj74.github.io/PAD-Garage-Menu/" target="_blank" rel="noopener">Abrir versión web</a>
+          <button onclick="window.print()">Imprimir</button>
+        </div>
+      </div>
+      <div class="right">
+        <img class="qr" src="PAD_Garage_QR_Final.png" alt="QR" width="140" height="140"/>
+      </div>
+    </section>
+
+    <section class="grid">
+      
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <h3>Esencial</h3>
+        <span class="badge">Duración: 30–60 min</span>
+      </div>
+      <ul class="features"><li>Lavado exterior (carrocería, cristales, llantas y rines)</li><li>Aspirado de interiores (asientos y tapetes)</li><li>Limpieza de vidrios interiores</li></ul>
+      
+    <table class="price-table">
+      <tr><th>Tipo de vehículo</th><th>Precio (MXN)</th></tr>
+      <tr><td>Auto chico</td><td>$200</td></tr>
+      <tr><td>Sedán mediano</td><td>$300</td></tr>
+      <tr><td>SUV / Pick-up</td><td>$350</td></tr>
+    </table>
+    
+    </div>
+    
+
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <h3>Confort</h3>
+        <span class="badge">Duración: 1.5–2.5 hrs</span>
+      </div>
+      <ul class="features"><li>Incluye todo lo del paquete Esencial</li><li>Lavado de motor</li><li>Limpieza profunda de tablero y plásticos interiores</li><li>Encerado básico de carrocería</li></ul>
+      
+    <table class="price-table">
+      <tr><th>Tipo de vehículo</th><th>Precio (MXN)</th></tr>
+      <tr><td>Auto chico</td><td>$500</td></tr>
+      <tr><td>Sedán mediano</td><td>$550</td></tr>
+      <tr><td>SUV / Pick-up</td><td>$700</td></tr>
+    </table>
+    
+    </div>
+    
+
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <h3>Brillo Total</h3>
+        <span class="badge">Duración: 3–4 hrs</span>
+      </div>
+      <ul class="features"><li>Incluye todo lo de Confort</li><li>Pulido ligero (corrección de rayones superficiales y brillo)</li><li>Detallado de interiores (tapicería tela/cuero, alfombra y asientos)</li><li>Aromatización (eliminación de olores)</li><li>Encerado</li></ul>
+      
+    <table class="price-table">
+      <tr><th>Tipo de vehículo</th><th>Precio (MXN)</th></tr>
+      <tr><td>Auto chico</td><td>$900</td></tr>
+      <tr><td>Sedán mediano</td><td>$1,000</td></tr>
+      <tr><td>SUV / Pick-up</td><td>$1,300</td></tr>
+    </table>
+    
+    </div>
+    
+    </section>
+
+    <div class="footer">
+      Última actualización: 2025-09-02 19:06. Archivo preparado para GitHub Pages (index.html).
+    </div>
+  </div>
+</body>
+</html>
